@@ -11191,6 +11191,8 @@ p {
   color: #F85C70;
 }
 
+
+/* PORTFOLIO START================================================= START*/
 .portfolio .filters {
   border-bottom: 2px solid #dee2e6;
   border-radius: 0;
@@ -11212,9 +11214,9 @@ p {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
   display: block;
-  color: #212529;
-  font-size: 13px;
-  font-weight: 500;
+  color: black;
+  font-size: 15px;
+  font-weight: 800;
   opacity: .7;
   padding: 4px 10px;
   transition: 0.3s;
@@ -11235,8 +11237,8 @@ p {
 
 .portfolio .filters a.active {
   opacity: 1;
-  background: #F85C70;
-  color: #fff;
+  background: green;
+  color: white;
 }
 
 .portfolio .portfolio-container .portfolio-item {
@@ -11276,8 +11278,11 @@ p {
   transform: translate(-50%, -50%) scale(1.1); /* Subtle zoom effect */
 }
 
+/* PORTFOLIO =================================================  END*/
 
-/* blog wrapper */
+
+
+/* BLOG WRAPPER =================================================  START*/
 .blog-card {
   display: -webkit-box;
   display: -webkit-flex;
@@ -11323,7 +11328,7 @@ p {
 
 .blog-card .content-holder .post-details a {
   margin-right: 10px;
-  color: #444;
+  color: grey;
   text-decoration: none;
   display: inline-block;
   font-weight: 600;
@@ -11358,6 +11363,9 @@ p {
   }
 }
 
+/* BLOG WRAPPER =================================================  END*/
+
+
 .custom-map {
   height: 400px;
 }
@@ -11378,6 +11386,9 @@ pre .code {
   width: 300px;
 }
 
+
+
+/* SOCIAL ICON [PERSONAL ICON] =================================================  START*/
 .social-icons {
   list-style-type: none;
   padding-left: 0;
@@ -11397,12 +11408,21 @@ pre .code {
 }
 
 .social-icons .social-link:hover {
-  color: #F85C70;
+  color: green;
 }
+/* SOCIAL ICON [PERSONAL ICON] =================================================  END*/
 
+
+
+
+
+/* NAVBAR [HOME, ABOUT, RESUME, PORTFOLIO, BLOG, CONTACT] ======================  START */
 .navbar {
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
   -webkit-box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
+  background: white; /* white background */
+  padding: 15px 30px;
+  font-family: "Dosis", "Open Sans", sans-serif;
 }
 
 .navbar .navbar-nav:first-child .nav-item:first-child .nav-link {
@@ -11415,17 +11435,81 @@ pre .code {
 
 .navbar .nav-link {
   font-weight: bold;
-  font-family: "Dosis","Open Sans",sans-serif;
+  font-size: 16px;
+  color: #FFFFFF; /* Default white text */
+  text-transform: uppercase;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: url('https://cdn.custom-cursor.com/hand-pointer.cur'), pointer; /* Custom pointer */
 }
 
+/* Hover Effect for Nav Links */
+.navbar .nav-link {
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: blue; /* Highlight color */
+  box-shadow: 0 8px 15px rgba(0, 0, 255, 0.2); /* Subtle shadow lift */
+  transform: translateY(-5px); /* Lift the text */
+}
+
+
+/* Active Nav Link */
 .navbar .nav-link.active {
-  color: #F85C70 !important;
+  color: green !important;
 }
 
+/* Underline Animation on Hover */
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background: red;
+  bottom: -5px;
+  left: 50%;
+  transition: width 0.3s ease, left 0.3s ease;
+}
+
+.navbar .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* Brand Logo Styling */
 .navbar .brand {
   text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 2px;
+  }
+
+/* Responsive Animation for Background */
+@keyframes navbarBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
+.navbar {
+  animation: navbarBG 10s ease infinite;
+  background-size: 200%;
+}
+
+/* NAVBAR [HOME, ABOUT, RESUME, PORTFOLIO, BLOG, CONTACT] ======================  END */
+
+
+
+
+/* NAVBAR [WEB DEVELOPER, DIGITAL MARKETER] ======================  START*/
 .navbar .brand .brand-img {
   position: absolute;
   left: 50%;
@@ -11474,7 +11558,11 @@ pre .code {
   top: -10px;
   opacity: 0;
 }
+/* NAVBAR [WEB DEVELOPER, DIGITAL MARKETER] ======================  END*/
 
+
+
+/* PAGINATION [FOOTER] ========================================START*/
 .pagination .page-item {
   margin: 0 4px;
   border-radius: 0;
@@ -11511,6 +11599,10 @@ pre .code {
   background: #17263C;
 }
 
+/* PAGINATION [FOOTER] ========================================END*/
+
+
+/* HEADER [IMAGES, ] ------------------------------START*/
 .header {
   position: relative;
   height: 80vh;
@@ -11523,8 +11615,13 @@ pre .code {
   background-attachment: fixed;
   color: #fff;
 }
+/* HEADER [IMAGES, ] -------------------------------END*/
 
 
+
+
+/* HEADER [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================START*/ 
+ 
  /* START BASIC STYLING FOR THE HEADER */
         .header-subtitle, .header-title, .header-mono, .btn {
             opacity: 0;
@@ -11549,7 +11646,7 @@ pre .code {
             cursor: pointer;
         }
 
-        /* START ANIMATION DIFINATION */
+        /* ANIMATION DIFINATION ---------------------START*/
         @keyframes fadeInUp {
             0% {
                 opacity: 0;
@@ -11561,10 +11658,7 @@ pre .code {
             }
         }
 
- /* START ANIMATION DIFINATION */
- 
- 
- 
+ /* ANIMATION DIFINATION------------------------------END */
  
  
 .header .container {
@@ -11580,7 +11674,7 @@ pre .code {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  color: #fff;
+  color: white;
 }
 
 .header .header-content .header-subtitle {
@@ -11593,7 +11687,7 @@ pre .code {
   font-weight: bold;
   line-height: .7;
   margin-bottom: 25px;
-  color: inherit;
+  color: olive;
 }
 
 .header .header-content .header-mono {
@@ -11602,6 +11696,9 @@ pre .code {
   font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
   margin-bottom: 40px;
 }
+/* HEADER  [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================END*/
+
+
 
 @media (max-width: 767.98px) {
   .header {
