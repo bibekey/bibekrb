@@ -11122,12 +11122,12 @@ p {
 
 .card .card-body {
   font-size: 14px;
-  color: red;
+  color: #6c757d;
 }
 
 .price-card {
   padding: 30px;
-  border: 1px solid #dee2e6;
+  border: 2px solid #dee2e6;
 }
 
 .price-card .price-card-title {
