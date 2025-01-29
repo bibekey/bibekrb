@@ -7250,7 +7250,7 @@ button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
 
-.bg-white {
+.bg-#FFA500 {
   background-color: #fff !important;
 }
 
@@ -8766,7 +8766,7 @@ button.bg-dark:focus {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
+  #FFA500-space: nowrap;
   border: 0;
 }
 
@@ -8776,7 +8776,7 @@ button.bg-dark:focus {
   height: auto;
   overflow: visible;
   clip: auto;
-  white-space: normal;
+  #FFA500-space: normal;
 }
 
 .shadow-sm {
@@ -10692,17 +10692,17 @@ button.bg-dark:focus {
 }
 
 .text-wrap {
-  white-space: normal !important;
+  #FFA500-space: normal !important;
 }
 
 .text-nowrap {
-  white-space: nowrap !important;
+  #FFA500-space: nowrap !important;
 }
 
 .text-truncate {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  #FFA500-space: nowrap;
 }
 
 .text-left {
@@ -10801,7 +10801,7 @@ button.bg-dark:focus {
   font-style: italic !important;
 }
 
-.text-white {
+.text-#FFA500 {
   color: #fff !important;
 }
 
@@ -10881,7 +10881,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.text-white-50 {
+.text-#FFA500-50 {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -10928,7 +10928,7 @@ a.text-dark:hover, a.text-dark:focus {
     content: " (" attr(title) ")";
   }
   pre {
-    white-space: pre-wrap !important;
+    #FFA500-space: pre-wrap !important;
   }
   pre,
   blockquote {
@@ -11107,7 +11107,7 @@ p {
   background: #fff;
   position: absolute;
   top: -28px;
-  border: 7px solid white;
+  border: 7px solid #FFA500;
   overflow: hidden !important;
   font-size: 35px;
 }
@@ -11238,7 +11238,7 @@ p {
 .portfolio .filters a.active {
   opacity: 1;
   background: green;
-  color: white;
+  color: #FFA500;
 }
 
 .portfolio .portfolio-container .portfolio-item {
@@ -11265,7 +11265,7 @@ p {
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  color: white;
+  color: #FFA500;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, transform 0.5s ease;
@@ -11484,7 +11484,7 @@ pre .code {
 .navbar {
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
   -webkit-box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
-  background: white; /* white background */
+  background: #FFA500; /* Orange background (.bg-white)*/
   padding: 15px 30px;
   font-family: "Dosis", "Open Sans", sans-serif;
 }
