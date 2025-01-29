@@ -14,6 +14,12 @@
 */
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap");
 :root {
+--Charcoa: #36454F
+--orange: #FFA500
+--Alabaster: #EDEADE
+
+
+
   --blue: #79A9F5;
   --indigo: #C45F90;
   --purple: #A16AE8;
@@ -11107,7 +11113,7 @@ p {
   background: #fff;
   position: absolute;
   top: -28px;
-  border: 7px solid #FFA500;
+  border: 2px solid #EDEADE;
   overflow: hidden !important;
   font-size: 35px;
 }
@@ -11238,7 +11244,7 @@ p {
 .portfolio .filters a.active {
   opacity: 1;
   background: green;
-  color: #FFA500;
+  color: #fff;
 }
 
 .portfolio .portfolio-container .portfolio-item {
@@ -11265,7 +11271,7 @@ p {
   justify-content: center;
   text-align: center;
   padding: 0 20px;
-  color: #FFA500;
+  color: blue;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.5s ease, transform 0.5s ease;
