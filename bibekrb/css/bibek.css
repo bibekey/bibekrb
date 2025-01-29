@@ -19,6 +19,8 @@
 --Alabaster: #EDEADE
 --SeaGreen: #2E8B57
 --Viridian: #40826D
+--white: #FFFFFF
+--Licorice: #1B1212
 
 
 
@@ -39,7 +41,7 @@
   --info: #47D8E0;
   --warning: #FF8882;
   --danger: #2E8B57;
-  --light: #f8f9fa;
+  --light: #FFFFFF;
   --dark: #343a40;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
@@ -73,7 +75,7 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #1B1212;
   text-align: left;
   background-color: #fff; /* Fallback color in case the image doesn't load */
   background-image: url("../imgs/heahder.jpg"); /* Replace with the image URL */
@@ -2113,7 +2115,7 @@ pre code {
 
 .table-dark {
   color: #fff;
-  background-color: #343a40;
+  background-color: #33a40;
 }
 
 .table-dark th,
@@ -3012,8 +3014,8 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .btn-light:hover {
@@ -3028,8 +3030,8 @@ fieldset:disabled a.btn {
 
 .btn-light.disabled, .btn-light:disabled {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .btn-light:not(:disabled):not(.disabled):active, .btn-light:not(:disabled):not(.disabled).active,
@@ -3271,14 +3273,14 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light {
-  color: #f8f9fa;
-  border-color: #f8f9fa;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .btn-outline-light:hover {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .btn-outline-light:focus, .btn-outline-light.focus {
@@ -3286,15 +3288,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-light.disabled, .btn-outline-light:disabled {
-  color: #f8f9fa;
+  color: #FFFFFF;
   background-color: transparent;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active, .btn-outline-light:not(:disabled):not(.disabled).active,
 .show > .btn-outline-light.dropdown-toggle {
   color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled):active:focus, .btn-outline-light:not(:disabled):not(.disabled).active:focus,
@@ -3633,7 +3635,7 @@ input[type="button"].btn-block {
 .dropdown-item:hover, .dropdown-item:focus {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -5623,7 +5625,7 @@ a.badge-danger:focus, a.badge-danger.focus {
 
 .badge-light {
   color: #212529;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
 }
 
 a.badge-light:hover, a.badge-light:focus {
@@ -5929,7 +5931,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   z-index: 1;
   color: #495057;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color: #FFFFFF;
 }
 
 .list-group-item-action:active {
@@ -7237,7 +7239,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #FFFFFF !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -7329,7 +7331,7 @@ button.bg-dark:focus {
 }
 
 .border-light {
-  border-color: #f8f9fa !important;
+  border-color: #FFFFFF !important;
 }
 
 .border-dark {
@@ -10860,7 +10862,7 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .text-light {
-  color: #f8f9fa !important;
+  color: #FFFFFF !important;
 }
 
 a.text-light:hover, a.text-light:focus {
@@ -11120,7 +11122,7 @@ p {
 
 .card .card-body {
   font-size: 14px;
-  color: #6c757d;
+  color: red;
 }
 
 .price-card {
@@ -11444,7 +11446,7 @@ pre {
   border: 2px solid #dee2e6;
   padding: 15px;
   border-radius: 0.25rem;
-  background: #f8f9fa;
+  background: #FFFFFF;
 }
 
 pre code,
