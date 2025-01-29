@@ -11043,7 +11043,7 @@ p {
   display: block;
   width: 25px;
   height: 1.5px;
-  background-color: #2E8B57;
+  background-color: red;
 }
 
 .breadcrumb {
@@ -11111,24 +11111,103 @@ p {
   border: none;
 }
 
+
+
+/* MY SERVICES =================================================  START*/
+/* Logo -------------  START*/
+.card .card-header.has-icon {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 20px;
+    background: transparent;
+}
+
 .card .card-header.has-icon i {
-  background: #fff;
-  position: absolute;
-  top: -28px;
-  border: 2px solid #EDEADE;
-  overflow: hidden !important;
-  font-size: 35px;
+    background: #fff;
+    position: absolute;
+    top: -2px; /* Moves the icon slightly outside the card */
+    top: 10%;
+    transform: translateX(-50%);
+    border: 2px solid #EDEADE;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover .card-header.has-icon i {
+    transform: translateX(-50%) scale(1.1);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Logo -------------  END*/
+
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: #fff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .card .card-body {
-  font-size: 14px;
-  color: #6c757d;
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: left;
 }
 
-.price-card {
-  padding: 30px;
-  border: 2px solid #dee2e6;
+.card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #343a40;
 }
+
+.card .card-body p {
+    margin-bottom: 10px;
+}
+/* MY SERVICES =================================================  END*/
+
+
+
+
+
+
+/* SOFTWARE PRICING =================================================  START*/
+
+.price-card {
+    padding: 30px;
+    background: #fff;
+    border: 2px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 
+        5px 5px 10px rgba(0, 0, 0, 0.2),  /* Bottom right shadow */
+        -5px -5px 10px rgba(255, 255, 255, 0.6); /* Top left highlight */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        8px 8px 15px rgba(0, 0, 0, 0.3),  
+        -8px -8px 15px rgba(255, 255, 255, 0.7);
+}
+
+
+/* SOFTWARE PRICING =================================================  END*/
+
+
+
 
 .price-card .price-card-title {
   font-size: 30px;
