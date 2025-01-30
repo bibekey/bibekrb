@@ -2805,42 +2805,42 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 /* PRINT RESUME BUTTOM START*/
-.btn-primary {
-  color: #fff;
-  background-color: #40826D;
-  border-color: #40826D;
-}
 
-.btn-primary:hover {
-  color: #fff;
-  background-color: #f63750;
-  border-color: #f62b45;
-}
+        .btn-primary {
+            color: #fff;
+            background-color: #40826D;
+            border-color: #40826D;
+        }
 
-/* PRINT RESUME BUTTOM END*/
+        .btn-primary:hover {
+            color: #fff;
+            background-color: #f63750;
+            border-color: #f62b45;
+        }
 
+        .btn-primary:focus, .btn-primary.focus {
+            box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+        }
 
-.btn-primary:focus, .btn-primary.focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
-}
+        .btn-primary.disabled, .btn-primary:disabled {
+            color: #fff;
+            background-color: #2E8B57;
+            border-color: #2E8B57;
+        }
 
-.btn-primary.disabled, .btn-primary:disabled {
-  color: #fff;
-  background-color: #2E8B57;
-  border-color: #2E8B57;
-}
+        .btn-primary:not(:disabled):not(.disabled):active, 
+        .btn-primary:not(:disabled):not(.disabled).active,
+        .show > .btn-primary.dropdown-toggle {
+            color: #fff;
+            background-color: #f62b45;
+            border-color: #f51f3a;
+        }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #f62b45;
-  border-color: #f51f3a;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-.show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
-}
+        .btn-primary:not(:disabled):not(.disabled):active:focus, 
+        .btn-primary:not(:disabled):not(.disabled).active:focus,
+        .show > .btn-primary.dropdown-toggle:focus {
+            box-shadow: 0 0 0 0.2rem rgba(249, 116, 133, 0.5);
+        }
 
 .btn-secondary {
   color: #fff;
@@ -12111,20 +12111,21 @@ pre .code {
  
  /*SHARE POST-=====================================================-START*/
  
-/* Modal Styles */
+ /* Modal Styles */
         .modal {
-            display: none;
+            display: none; /* Hidden by default */
             position: fixed;
-            z-index: 1;
+            z-index: 1; /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
             height: 100%;
             overflow: auto;
-            background-color: rgba(0, 0, 0, 0.4);
+            background-color: rgba(0, 0, 0, 0.4); /* Black with opacity */
             padding-top: 60px;
         }
 
+        /* Modal Content */
         .modal-content {
             background-color: #fefefe;
             margin: 5% auto;
@@ -12134,6 +12135,7 @@ pre .code {
             max-width: 500px;
         }
 
+        /* Close Button */
         .close {
             color: #aaa;
             font-size: 28px;
@@ -12151,8 +12153,8 @@ pre .code {
             cursor: pointer;
         }
 
+        /* Social Media Button Styles */
         .social-icon {
-            display: flex;
             align-items: center;
             justify-content: center;
             width: 40px;
@@ -12177,7 +12179,7 @@ pre .code {
         .social-icon .fab.fa-linkedin-in { color: #0077b5; }
         .social-icon .fab.fa-youtube { color: #FF0000; }
         .social-icon .fab.fa-pinterest { color: #E60023; }
-    </style>
+ 
  
  /*SHARE POST-=====================================================-END*/
  
