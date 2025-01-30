@@ -188,9 +188,13 @@ $(document).ready(function() {
  
  
  
-// Get the modal and button elements
+  // Get modal element
     var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
     var btn = document.getElementById("shareBtn");
+
+    // Get the <span> element that closes the modal
     var span = document.getElementsByClassName("close")[0];
 
     // When the user clicks the button, open the modal
@@ -209,3 +213,4 @@ $(document).ready(function() {
             modal.style.display = "none";
         }
     }
+
