@@ -185,3 +185,30 @@ $(document).ready(function() {
     }
   }
  // TABLE OF CONTENT*=================== END
+ 
+ 
+ 
+ 
+ 
+ 
+ document.addEventListener("DOMContentLoaded", function () {
+  let text = document.querySelector(".text-muted");
+  let letters = text.innerText.split("");
+  text.innerText = "";
+  
+  letters.forEach((letter, index) => {
+    let span = document.createElement("span");
+    span.innerText = letter;
+    span.style.opacity = "0";
+    span.style.transition = `opacity 0.5s ease-in-out ${index * 50}ms`;
+    text.appendChild(span);
+    
+    setTimeout(() => { span.style.opacity = "1"; }, 100);
+  });
+});
+
+ 
+ 
+ 
+ 
+ 

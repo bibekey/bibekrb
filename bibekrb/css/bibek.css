@@ -10882,8 +10882,22 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .text-muted {
-  color: #1B1212 !important;
+  transform: rotateY(90deg);
+  opacity: 0;
+  animation: flipIn 1.5s ease-out forwards;
 }
+
+@keyframes flipIn {
+  from {
+    transform: rotateY(90deg);
+    opacity: 0;
+  }
+  to {
+    transform: rotateY(0);
+    opacity: 1;
+  }
+}
+
 
 .text-black-50 {
   color: rgba(0, 0, 0, 0.5) !important;
