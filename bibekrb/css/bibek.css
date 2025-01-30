@@ -12081,3 +12081,73 @@ pre .code {
 
 .pagination a:hover:not(.active) {background-color: #ddd;}
  /*RESPONSIVE PAGINATION [HOVER, EFFECT ]-===========================-END*/
+ 
+ 
+ 
+ /*SHARE POST-=====================================================-START*/
+ 
+ .share-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; /* Set width and height */
+    height: 40px;
+    background-color: #fff; /* Optional: background for better visibility */
+    border-radius: 50%; /* Circular icon */
+    color: #000; /* Default color */
+    font-size: 20px; /* Icon size */
+    transition: all 0.3s ease;
+    text-decoration: none; /* Remove underline from link */
+}
+
+/* Hover effect */
+.social-icon:hover {
+    background-color: #f0f0f0; /* Light gray background on hover */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Optional: Colorful social media icons */
+.social-icon i {
+    color: inherit; /* Inherit the color from the parent link */
+}
+
+.social-icon .fab.fa-facebook-f {
+    color: #1877f2; /* Facebook blue */
+}
+
+.social-icon .fab.fa-instagram {
+    color: #E4405F; /* Instagram pink */
+}
+
+.social-icon .fab.fa-twitter {
+    color: #1DA1F2; /* Twitter blue */
+}
+
+.social-icon .fab.fa-whatsapp {
+    color: #25D366; /* WhatsApp green */
+}
+
+.social-icon .fab.fa-linkedin-in {
+    color: #0077b5; /* LinkedIn blue */
+}
+
+.social-icon .fab.fa-youtube {
+    color: #FF0000; /* YouTube red */
+}
+
+.social-icon .fab.fa-pinterest {
+    color: #E60023; /* Pinterest red */
+}
+
+ 
+ 
+ /*SHARE POST-=====================================================-END*/
+ 
+ 
+ 
