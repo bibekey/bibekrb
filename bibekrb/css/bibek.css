@@ -11787,84 +11787,90 @@ pre .code {
 
 
 
-/* HEADER [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================START*/ 
- 
- /* START BASIC STYLING FOR THE HEADER */
-        .header-subtitle, .header-title, .header-mono, .btn {
-            opacity: 0;
-            transform: translateY(20px);
-            animation: fadeInUp 1s forwards;
-        }
+/* HEADER [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================START*/
 
-        .header-subtitle {
-            animation-delay: 0.3s;
-        }
+/* START BASIC STYLING FOR THE HEADER */
+.header-subtitle, .header-title, .header-mono, .btn {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 
-        .header-title {
-            animation-delay: 0.5s;
-        }
+.header-subtitle {
+    animation-delay: 0.3s;
+}
 
-        .header-mono {
-            animation-delay: 0.9s;
-        }
+.header-title {
+    animation-delay: 0.5s;
+}
 
-        .btn {
-            animation-delay: 1.2s;
-            cursor: pointer;
-        }
+.header-mono {
+    animation-delay: 0.9s;
+}
 
-        /* ANIMATION DIFINATION ---------------------START*/
-        @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+.btn {
+    animation-delay: 1.2s;
+    cursor: pointer;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transform: perspective(1000px) rotateX(10deg);
+}
 
- /* ANIMATION DIFINATION------------------------------END */
- 
- 
+/* ANIMATION DEFINITION ---------------------START*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) perspective(1000px) rotateX(20deg);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) perspective(1000px) rotateX(0);
+    }
+}
+
+/* ANIMATION DEFINITION------------------------------END */
+
 .header .container {
-  position: relative;
-  height: 100%;
+    position: relative;
+    height: 100%;
 }
 
 .header .header-content {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: 55%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
-  color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
 }
 
 .header .header-content .header-subtitle {
-  font-weight: 500;
-  font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: 500;
+    font-size: calc(20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)));
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
 }
 
 .header .header-content .header-title {
-  font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
-  font-weight: bold;
-  line-height: .7;
-  margin-bottom: 25px;
-  color: orange;
+    font-size: calc(40px + (120 - 40) * ((100vw - 300px) / (1600 - 300)));
+    font-weight: bold;
+    line-height: .7;
+    margin-bottom: 25px;
+    color: orange;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.6);
+    transform: perspective(1000px) rotateY(-10deg);
 }
 
 .header .header-content .header-mono {
-  letter-spacing: 2px;
-  font-weight: 1000;
-  font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
-  margin-bottom: 40px;
+    letter-spacing: 2px;
+    font-weight: 1000;
+    font-size: calc(12px + (19 - 12) * ((100vw - 300px) / (1600 - 300)));
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transform: perspective(1000px) rotateX(-10deg);
 }
-/* HEADER  [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================END*/
 
+/* HEADER  [BIBEK RAJBANSHI, Web Designer | Digital Marketing ] ========================================END*/
 
 
 @media (max-width: 767.98px) {
