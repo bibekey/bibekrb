@@ -17,7 +17,7 @@
     <!-- font icons -->
     <link rel="stylesheet" href="../assets/bibekrb/bibekicons/css/icons.css">
     <!-- Bootstrap + BibekRajbanshi main styles -->
-	<link rel="stylesheet" href="../assets/css/bibek.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="PageError.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Personal Blog</a>
@@ -286,7 +286,28 @@
             <p class="small mb-0 text-light">  &copy; 2023 Bibek Rajbanshi. All Rights Reserved. </p>
         </div>
     </footer>
-
+<style>
+        #scrollUp {
+            position: fixed;
+            bottom: 15px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            background: orange;
+            color: green;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.1s, visibility 0s;
+            z-index: 9999;
+        }
+    </style>
+    <button id="scrollUp">↑</button>
 	<!-- core  -->
     <script src="../assets/bibekrb/jquery/jquery-3.4.1.js"></script>
     <script src="../assets/bibekrb/bootstrap/bootstrap.bundle.js"></script>

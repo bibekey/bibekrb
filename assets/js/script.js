@@ -185,3 +185,33 @@ $(document).ready(function() {
     }
   }
  // TABLE OF CONTENT*=================== END
+ 
+  // SCROLL UPT*=================== START
+  let timeout;
+        const scrollButton = document.getElementById("scrollUp");
+
+        window.addEventListener("scroll", () => {
+            scrollButton.style.opacity = "1";
+            scrollButton.style.visibility = "visible";
+
+            clearTimeout(timeout);
+            timeout = setTimeout(() => {
+                scrollButton.style.opacity = "0";
+                scrollButton.style.visibility = "hidden";
+            }, 2000); // Hides after 2 seconds of inactivity
+        });
+
+// SCROLL UPT*=================== START
+
+
+
+
+
+
+
+
+
+
+
+
+
