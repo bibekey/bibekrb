@@ -11671,6 +11671,56 @@ pre .code {
   background-size: 200%;
 }
 
+
+
+
+
+.nav-item {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+
+
+
+
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown a:hover {
+    background: orange;
+}
+
+.nav-item:hover .dropdown {
+    display: block;
+}
+
+
+
+
+
 /* NAVBAR [HOME, ABOUT, RESUME, PORTFOLIO, BLOG, CONTACT] ======================  END */
 
 
