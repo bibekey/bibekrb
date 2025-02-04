@@ -43,28 +43,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="error.html" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> Personal Blog</a>
-    <header class="header">
-        <div class="container">
-            <ul class="social-icons pt-3">
-                <li class="social-item"><a href="https://www.facebook.com/bibek.dec" class="btn"><i class="fab fa-facebook-f" style="color: #3b5998;"></i></a></li>
-                <li class="social-item"><a href="https://www.instagram.com/bibekk.00" class="btn"><i class="fab fa-instagram" style="color: #E4405F;"></i></a></li>
-                <li class="social-item"><a href="https://www.linkedin.com/in/bibekrb" class="btn"><i class="fab fa-linkedin-in" style="color: #0e76a8;"></i></a></li>
-                <li class="social-item"><a href="https://www.tiktok.com/@bi.b.ek" class="btn"><i class="fab fa-tiktok" style="color: #FFFFFF;"></i></a></li>
-                <li class="social-item"><a href="https://github.com/bibekey" class="btn"><i class="fab fa-github" style="color: #FFFFFF;"></i></a></li>
-                <li class="social-item"><a href="https://www.snapchat.com/add/bibekey5" class="btn"><i class="fab fa-snapchat" style="color: #FFCC00;;"></i></a></li>
-            </ul> 
-            <div class="header-content">
-                <h4 class="header-text-muted" >Hello, I'm</h4>
-                <h1 class="header-title">Bibek Rajbanshi</h1>
-                <h6 class="header-mono" >Web Designer | Digital Marketer</h6>
-                <a href="../resumePDF/myresume.pdf" target="_blank"><button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</button>
-            </div>
-        </div>
+ 
     </header>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+      <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
        <div class="container d-flex align-items-center">
     <a href="#" class="navbar-brand d-block d-sm-none">
-    <img src="../assets/img/BRLOGO1.png" alt="BR" title="BR" width="45" height="45" class="logo-img">
+    <img src="../assets/img/BRLOGO1.png" alt="BRLOGO" title="BRLOGO" width="50" height="50" class="logo-img">
 </a>
 
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,43 +59,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <li class="nav-item">
                 <a href="#home" class="nav-link">Home</a>
             </li>
-            <li class="nav-item">
-                <a href="#about" class="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-                <a href="#h" class="nav-link">Testimonials</a>
-            </li>
-            <li class="nav-item">
-                <a href="#resume" class="nav-link">Resume</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav brand">
-            <img src="../assets/img/avatar.jpg" alt="" class="brand-img">
-            <li class="brand-txt">
-                <h5 class="brand-title"><strong>Bibek Rajbanshi</strong></h5>
-                <div class="brand-subtitle">Web Designer | Digital Marketer</div>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-                <a href="#portfolio" class="nav-link">Portfolio</a>
+<!-- Dropdown 1 -->
+<li class="nav-item">
+  <a href="javascript:void(0);" class="nav-link dropbtn" onclick="myFunction('myDropdown1')">About <span class="arrow">&#9662;</span></a>
+  <ul class="dropdown-content" id="myDropdown1">
+  <a href="#about" class="nav-link">About Me</a>
+  <a href="#resume" class="nav-link">Resume</a>
+  <a href="#portfolio" class="nav-link">Portfolio</a>
+  <a href="#b" class="nav-link">Testimonials</a>
+  <a href="../about/privacy-policy.html" class="nav-link">Privacy Policy</a>
+  <a href="#b" class="nav-link">Terms & Conditions</a>
+  </ul>
             </li>
             <li class="nav-item">
                 <a href="#blog" class="nav-link">Blog</a>
             </li>
+        </ul>
+        <ul class="navbar-nav brand">
+            <li class="brand-txt">
+                <h5 class="brand-title"><strong>Bibek Rajbanshi</strong></h5>
+                <div class="brand-subtitle">Web Designer | Digital Marketing</div>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="#b" class="nav-link">Videos</a>
+            </li>
+<!-- Dropdown 2 -->
+<li class="nav-item">
+  <a href="javascript:void(0);" class="nav-link dropbtn" onclick="myFunction('myDropdown2')">More <span class="arrow">&#9662;</span></a>
+  <ul class="dropdown-content" id="myDropdown2">
+  <a href="../index.html" class="nav-link">Page 1</a>
+  <a href="../index.html" class="nav-link">Page 2</a>
+  </ul>
             <li class="nav-item last-item">
                 <a href="#contact" class="nav-link">Contact</a>
             </li>
-            <li class="nav-item last-item">
-    <a href="#b" class="nav-link">Pages <span class="arrow">&#9662;</span></a>
-
-    <ul class="dropdown">
-        <li><a href="privacy-policy.html">Privacy Policy</a></li>
-        <li><a href="#b">Terms & Conditions</a></li>
-    </ul>
-</li>
-        </ul>
-    </div>
+      </div>
 </div>
         </div>
     </nav>

@@ -11674,51 +11674,52 @@ pre .code {
 
 
 
-
+/* Apply the new CSS as per the requirement */
 .nav-item {
-    position: relative;
+  position: relative;
 }
 
-.dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 150px;
-    display: none;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
+.dropdown-content {
+  position: absolute;
+  background: white;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  display: none; /* Initially hidden */
+  flex-direction: row; /* Display items in a row (horizontally) */
+  white-space: nowrap; /* Prevent wrapping of items to new lines */
+  z-index: 9999; /* Ensure the dropdown stays on top */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow to dropdown */
 }
 
-
-
-
-
-
-.dropdown li {
-    display: block;
+.dropdown-content.show {
+  display: block;
+  background: white;
 }
 
-.dropdown a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: black;
+.dropdown-content li {
+  padding: 10px;
+  cursor: pointer; /* Change cursor to pointer on hover */
 }
 
-.dropdown a:hover {
-    background: orange;
+.dropdown-content li a {
+  text-decoration: none;
+  color: black;
+  display: block;
 }
 
-.nav-item:hover .dropdown {
-    display: block;
+.dropdown-content a:hover {
+  background: orange;
 }
 
+.nav-item:hover .dropdown-content {
+  background: white;
+}
 
-
+.dropdown-content.show {
+  display: block;
+}
 
 
 /* NAVBAR [HOME, ABOUT, RESUME, PORTFOLIO, BLOG, CONTACT] ======================  END */
