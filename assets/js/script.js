@@ -203,6 +203,8 @@ $(document).ready(function() {
 
 // SCROLL UPT*=================== START
 
+
+// DROPDOWN NAVBAR =================== START
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction(dropdownId) {
@@ -223,10 +225,41 @@ window.onclick = function(event) {
   }
 }
 
+// DROPDOWN NAVBAR =================== END
 
 
+// Detects and starts counting only when the section enters the viewport*=================== START
 
+function animateCounter(counter) {
+            const target = +counter.getAttribute("data-target");
+            let count = 0;
+            const speed = target / 100; // Adjust speed
 
+            const updateCounter = () => {
+                if (count < target) {
+                    count += speed;
+                    counter.innerText = Math.ceil(count) + (target >= 1000 ? "+" : "+"); 
+                    setTimeout(updateCounter, 20);
+                } else {
+                    counter.innerText = target + (target >= 1000 ? "+" : "+");
+                }
+            };
+
+            updateCounter();
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounter(entry.target);
+                    observer.unobserve(entry.target); // Stops observing after animation
+                }
+            });
+        }, { threshold: 0.5 });
+
+        document.querySelectorAll(".counter").forEach(counter => observer.observe(counter));
+        
+// Detects and starts counting only when the section enters the viewport*=================== END
 
 
 
