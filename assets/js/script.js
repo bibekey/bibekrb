@@ -262,6 +262,30 @@ function animateCounter(counter) {
 // Detects and starts counting only when the section enters the viewport*=================== END
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let bar = entry.target;
+                let targetValue = parseInt(bar.getAttribute("data-target")); // Get target percentage
+                let currentWidth = 0;
+
+                const increaseWidth = () => {
+                    if (currentWidth <= targetValue) {
+                        bar.style.width = currentWidth + "%";
+                        currentWidth++;
+                        setTimeout(increaseWidth, 15); // Adjust speed (lower = faster)
+                    }
+                };
+
+                increaseWidth();
+                observer.unobserve(bar); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll(".progress-bar").forEach(bar => observer.observe(bar));
+});
 
 
 
