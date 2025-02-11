@@ -261,7 +261,7 @@ function animateCounter(counter) {
         
 // Detects and starts counting only when the section enters the viewport*=================== END
 
-
+// Progress Bar Animation =================== START
 document.addEventListener("DOMContentLoaded", function () {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
@@ -287,6 +287,37 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll(".progress-bar").forEach(bar => observer.observe(bar));
 });
 
+// Progress Bar Animation =================== END
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                let element = entry.target;
+                let currentPosition = 30; // Start position (30px down)
+                let opacity = 0;
+
+                const animateElement = () => {
+                    if (currentPosition > 0) {
+                        currentPosition -= 1; // Move up gradually
+                        opacity += 0.03; // Gradually increase opacity
+                        element.style.transform = `translateY(${currentPosition}px)`;
+                        element.style.opacity = opacity;
+                        setTimeout(animateElement, 15); // Adjust speed
+                    } else {
+                        element.style.transform = "translateY(0)";
+                        element.style.opacity = "1";
+                    }
+                };
+
+                animateElement();
+                observer.unobserve(element); // Stop observing after animation
+            }
+        });
+    }, { threshold: 0.5 });
+
+    // Select both paragraph and heading elements
+    document.querySelectorAll(".text-muted, .card-title").forEach(el => observer.observe(el));
+});
