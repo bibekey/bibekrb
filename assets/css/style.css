@@ -11212,8 +11212,6 @@ p {
 /* SOFTWARE PRICING =================================================  END*/
 
 
-
-
 .price-card .price-card-title {
   font-size: 30px;
   margin-bottom: 20px;
@@ -11254,8 +11252,17 @@ p {
 }
 
 .price-card .list .list-item {
-  margin: 12px 0;
+    margin: 12px 0;
+    transform: scale(1);
+    box-shadow: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.price-card .list .list-item:hover {
+    transform: scale(0.95);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .price-card.price-card-requried {
   position: relative;
@@ -11264,13 +11271,13 @@ p {
 }
 
 .price-card.price-card-requried:after {
-  content: 'New';
+  content: 'Offer';
   position: absolute;
   right: -25px;
   top: 10px;
   padding: 6px 10px;
   width: 100px;
-  background: #2E8B57;
+  background: red;
   color: #fff;
   font-weight: 400;
   -webkit-transform: rotate(45deg);
