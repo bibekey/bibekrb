@@ -6,3 +6,21 @@ RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
 
 # Ensure clean URLs
 DirectoryIndex index.html index.php
+
+
+
+https://rajbanshibibek.com.np/index.html, 
+https://rajbanshibibek.com.np/blog/Blog.html, 
+https://rajbanshibibek.com.np/blog/post1.html
+https://rajbanshibibek.com.np/blog/post2.html
+https://rajbanshibibek.com.np/blog/post3.html
+https://rajbanshibibek.com.np/blog/post4.html
+https://rajbanshibibek.com.np/blog/post5.html
+https://rajbanshibibek.com.np/blog/post6.html
+https://rajbanshibibek.com.np/blog/post7.html
+https://rajbanshibibek.com.np/blog/post8.html
+https://rajbanshibibek.com.np/blog/post9.html
+https://rajbanshibibek.com.np/blog/post10.html
+https://rajbanshibibek.com.np/about/about.html
+https://rajbanshibibek.com.np/about/privacy-policy.html
+https://rajbanshibibek.com.np/about/terms-&-condition.html
