@@ -1,8 +1,0 @@
-RewriteEngine On
-
-# Redirect index.html to the root URL
-RewriteCond %{THE_REQUEST} /index\.html [NC]
-RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
-
-# Ensure clean URLs
-DirectoryIndex index.html index.php
