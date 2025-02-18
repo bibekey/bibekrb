@@ -324,6 +324,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   // Redirect only if the URL ends with .html
-  if (window.location.pathname.match(/\.html$/)) {
-    window.location.href = window.location.pathname.replace(/\.html$/, "/");
+  if (window.location.pathname.endsWith(".html")) {
+    window.location.href = window.location.pathname.replace(".html", "/");
   }
