@@ -1,6 +1,8 @@
-
-# Hide .html extension for all pages
 RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Redirect index.html to the root URL
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*)index\.html$ /$1 [R=301,L]
+
+# Ensure clean URLs
+DirectoryIndex index.html index.php
