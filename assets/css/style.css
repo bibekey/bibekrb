@@ -11594,7 +11594,7 @@ pre .code {
 .navbar {
   box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
   -webkit-box-shadow: 0 1px 10px rgba(54, 54, 54, 0.18);
-  background: #FFA500; /* Orange background (.bg-white)*/
+  background: #fff; /* Orange background (.bg-white)*/
   padding: 15px 30px;
   font-family: "Dosis", "Open Sans", sans-serif;
 }
