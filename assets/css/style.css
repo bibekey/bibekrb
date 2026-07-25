@@ -11717,7 +11717,7 @@ pre .code {
 }
 
 .dropdown-content a:hover {
-  background: orange;
+  background: ff;
 }
 
 .nav-item:hover .dropdown-content {
@@ -11743,7 +11743,7 @@ pre .code {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -weblit-transform: translate(-50%, -50%);
-  border: 10px solid orange;
+  border: 10px solid #fff;
   -webkit-transition: .5s !important;
   transition: .5s !important;
   -weblit-transition: .5s !important;
